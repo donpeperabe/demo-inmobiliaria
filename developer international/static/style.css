@@ -1,0 +1,113 @@
+/* ===== Estilo general ===== */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #fff8e1, #f3e5ab);
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Contenedor principal ===== */
+.card {
+    max-width: 1100px;
+    margin: 60px auto;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== Galería de imágenes ===== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+    background: #fafafa;
+    border-bottom: 3px solid #f0f0f0;
+}
+
+.gallery img {
+    width: 32%; /* imágenes amplias, 3 por fila */
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Información de la propiedad ===== */
+.info {
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.info .desc {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info .price {
+    font-size: 1.5rem;
+    color: #c5a54b; 
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* ===== Botón de WhatsApp profesional ===== */
+.btn-whatsapp {
+    background: linear-gradient(135deg, #d4af37, #128c7e);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background: linear-gradient(135deg, #1ebe5d, #0e745f);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+    transform: scale(1.05);
+}
+
+/* ===== Adaptación a pantallas pequeñas ===== */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 48%;
+        height: 180px;
+    }
+
+    .info {
+        padding: 25px;
+    }
+
+}
