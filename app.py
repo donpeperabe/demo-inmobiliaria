@@ -16,19 +16,17 @@ if not os.path.exists(app.config['UPLOAD_FOLDER']):
 def landing_demo():
     propiedad = {
         'titulo': 'Casa moderna en Monterrico',
-        'descripcion': 'Hermosa casa amueblada en venta, rodeada de naturaleza. '
-        'Ideal para descanso o inversión turística.',
+        'descripcion': 'Hermosa casa amueblada en venta, rodeada de naturaleza. Ideal para descanso o inversión turística.',
         'precio': '$160,000',
-        'title': 'Modern House in Monterrico',
-        'description': 'Beautiful furnished house for sale, surrounded by nature. '
-        'Perfect for relaxation or as a tourism investment.',
-        'price': '$160,000' ,
+        'titulo2': 'Modern House in Monterrico',                    # 
+        'descripcion2': 'Beautiful furnished house for sale, surrounded by nature. Perfect for relaxation or as a tourism investment.',  # ❌ CAMBIAR
+        'price': '$160,000',
         'imagenes': [
             'uploads/demo_casa1.jpg',
-            'uploads/demo_casa2.jpg',
+            'uploads/demo_casa2.jpg', 
             'uploads/demo_casa3.jpg'
         ],
-        'whatsapp': '50244851125'  # tu número en formato internacional sin +
+        'whatsapp': '50244851125'
     }
     return render_template('landing.html', propiedad=propiedad)
 
@@ -36,6 +34,8 @@ def landing_demo():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
+
+
 
 
 
