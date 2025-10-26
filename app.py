@@ -18,6 +18,10 @@ def landing_demo():
         'titulo': 'Casa moderna en Monterrico',
         'descripcion': 'Hermosa casa con vista panorámica, rodeada de naturaleza. Ideal para descanso o inversión turística.',
         'precio': '$160,000',
+        'title': 'Modern House in Monterrico',
+        'description': 'Beautiful furnished house for sale, surrounded by nature. '
+        'Perfect for relaxation or as a tourism investment.',
+        'price': '$160,000' ,
         'imagenes': [
             'uploads/demo_casa1.jpg',
             'uploads/demo_casa2.jpg',
@@ -31,4 +35,5 @@ def landing_demo():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
+
 
